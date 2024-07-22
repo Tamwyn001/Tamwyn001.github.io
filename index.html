@@ -2,10 +2,34 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/styles.css">
         <title>Portfolio</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>Tamwyn's Portfolio</h1>
-        <p>This a small test</p>
+        
+        <div id="banner">
+            <header>
+                <h1 class="josefin-sans-bold">Tamwyn's Portfolio</h1>
+            </header>
+        </div>
+        <div id ="leftportal">
+            <div id="sidebar">
+                <button onclick="filterPage('Home')", class="josefin-sans-regular">Home</button>
+                <button onclick="filterPage('Art')", class="josefin-sans-regular">Art</button>
+                <button onclick="filterPage('Contact')", class="josefin-sans-regular">Contact</button>
+            </div>
+        </div>
+        <div id="center">   
+            <main>
+                <p class = "josefin-sans-regular">This is a small test buddy. However,.. Hello guys! This is the center of the page.. My portfolio is gonna be nioice, waiting for the programmer to finish the work actualy.. Zzz</p>
+                <div id="scrollBoxArt">
+                    <p class = "josefin-sans-light">Here's gonna be some cells with the artpiece</p>
+                </div>
+            </main>
+        </div>  
     </body>
 </html>
