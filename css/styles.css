@@ -27,37 +27,156 @@
   }
 
 body{
-    background-color: #ffffff;
+    background-image: url('../graphics/IndexBackground.png');
+    background-color: #ff7477;
+    background-repeat: repeat;
+    background-size: 60%;
+    /*body takes the full height of the viewport */
+    height: 80vh;
+    animation: anim-todark running 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+    
+}   
+body.light-theme {
+    background-color: #ecfff9;
+    /* animation: anim-fadein 0.5s ease-in-out; */
+}
+body.dark-theme {
+    background-color: #35304d;
+    /* animation: anim-fadein 0.5s ease-in-out; */
+}
+
+
+
+
+
+
+.banner-button {
+    position: relative;
+    color: #ff7477;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    overflow: hidden; /* Ensure the line is visible only within the button */
+    transition: color 0.3s ease; /* Transition effect for button text color */;
+    font-size: 1.1em;
+    padding: 0.5rem 1rem;
+}
+
+/* Line under the button using pseudo-element */
+.banner-button::after {
+    content: '';
+    position: absolute;
+    transform: translateX(0%) scaleX(.3); /* Start with scaleX(0) to make it invisible */
+    transform-origin: center; /* Ensure the scaling is centered */
+    left: 0;
+    bottom: 0;
+    background-color: transparent;
+    width:100%;
+    height: 4px; /* Line height */
+    background-color:#ff7477; /* Line color */
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Transition effect for line width */
+}
+.banner-button::afterclic {
+    content: '';
+    position: absolute;
+    transform: translateX(0%) scaleX(.3); /* Start with scaleX(0) to make it invisible */
+    transform-origin: center; /* Ensure the scaling is centered */
+    left: 0;
+    bottom: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 4px; /* Line height */
+    background-color:#86bbd8; /* Line color */
+    border-radius: 100px;
+    transition: transform 0.3s ease; /* Transition effect for line width */
+}
+
+/* Hover effect to expand the line */
+.banner-button:hover::after {
+    transform: translateX(0%) scaleX(.7); /* Scale the line equally to full width */
+}
+.banner-button:clic:afterclic {
+    transform: translateX(0%) scaleX(.7); /* Scale the line equally to full width */
 }
 #banner
 {
     background-color: #f7e8a4;
-    text-align: left;
+    background-image: linear-gradient( #f7e8a4,  #f2f3ae);
+    opacity:1;
     padding-left: 10px;
-    padding-top: 20px;
+    padding-top: 2px;
     padding-bottom: 1px;
-}
+    border-radius: 0px 0px 20px 20px;
 
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    text-transform: uppercase;
+    margin-top: 1.3em;
+    margin-bottom: 0.1em;
+
+    /* border-bottom: 2px solid #ff7477; */
+}
 
 h1{
     color: #ff7477;
     font-size: 2.5em;
+    text-align: justify;
+    text-justify: distribute;
+    display: inline
+}
+#banner-buttons-container{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    vertical-align: middle;
+    margin-right: 2em;
+    height: 40px; /* Height of the buttons, necessary for the separator in percent */
+}
+
+.button-theme{
+
+}
+
+.separator-banner-buttons{
+    width: 5px;
+    height: 80%;
+    align-self: center;
+    background-color:#ff7477;
+    border-radius: 7px;
+}
+
+#content-wrapper {
+    display: flex;
+    flex-flow: row;
+    justify-content: left;
+    margin-top: 7em; /* Distance from the banner */
+    margin-left:1em;
+    padding: 1rem;
+    height: 100%;
 }
 #leftportal{
-    margin-left: 3rem;
 }
 #center{
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 5em;
-    padding-left: 3.5em;
-    margin-right: 2em;
+    margin-top: 1em;
+    margin-left: 2em;
     margin-bottom: 3em;
-    flex-grow: 1; /* Make the section fill the remaining space */
-}
+    display: flex;
+    flex-direction: column;
+    flex-grow:  1;
+    /* Make the section fill the vertical remaining space :*/
+    
+    background-color: #f2f3ae;
+    padding: 1em;
+
+}   
 
 
 p{
@@ -72,7 +191,8 @@ p{
     align-items: flex-start;
     margin: 10px;
     padding-top: 2rem;
-    height: 100vh; /* Ensure the main container takes the full height of the viewport */
+    /* height: 100vh; Ensure the main container takes the full height of the viewport */
+
 }
 #scrollBoxArt{
     display: flex;
@@ -83,7 +203,8 @@ p{
     justify-content: center;
 }
 #sidebar{
-    margin-top: 12em;
+    margin-top: 7em;
+    margin-bottom: 3em;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -93,6 +214,7 @@ p{
     border-radius: 10px;
     float:left;
     width:150px;
+
 }
 
 #sidebar button {
