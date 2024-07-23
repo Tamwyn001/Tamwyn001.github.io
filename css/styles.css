@@ -38,17 +38,13 @@ body{
     
 }   
 body.light-theme {
-    background-color: #ecfff9;
+    background-color: #ffffff;
     /* animation: anim-fadein 0.5s ease-in-out; */
 }
 body.dark-theme {
     background-color: #35304d;
     /* animation: anim-fadein 0.5s ease-in-out; */
 }
-
-
-
-
 
 
 .banner-button {
@@ -111,7 +107,7 @@ body.dark-theme {
     padding-top: 2px;
     padding-bottom: 1px;
     border-radius: 0px 0px 20px 20px;
-
+    
 }
 header{
     display: flex;
