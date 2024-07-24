@@ -1,0 +1,59 @@
+#DriftAuResto{
+    width:100%;
+    height:auto;
+    grid-area: DriftAuResto;
+}
+#Port{
+    width:100%;
+    height:auto;
+    grid-area: Port;
+}
+#ScreenShot00018{
+    width:100%;
+    height:auto;
+    grid-area: ScreenShot00018;
+}
+#BALCONEE{
+    width:100%;
+    height:auto;
+    grid-area: BALCONEE;
+}
+#noel{
+    width:100%;
+    height:auto;
+    grid-area: noel;
+}
+#bday{
+    width:100%;
+    height:auto;
+    grid-area: bday;
+}
+#noel{
+    width:100%;
+    height:auto;
+    grid-area: noel;
+}
+#stray{
+    width:100%;
+    height:auto;
+    grid-area: stray;
+}
+#images-home-grid{
+    display: grid;
+    grid-template-areas:
+      'DriftAuResto DriftAuResto DriftAuResto Port Port' 
+      'DriftAuResto DriftAuResto DriftAuResto Port Port'
+      'BALCONEE BALCONEE bday ScreenShot00018 ScreenShot00018'
+      'BALCONEE BALCONEE . ScreenShot00018 ScreenShot00018'
+      'noel noel stray stray stray';
+    gap: 1em;
+    padding: 10px;
+}
+.photo-holder{    
+    background-color: #f8f9fa;
+    flex-grow: 0;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);;
+}

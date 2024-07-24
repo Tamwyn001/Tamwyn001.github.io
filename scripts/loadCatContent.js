@@ -9,7 +9,7 @@ function filterPage(page) {
             break;
         case 'Contact':
             filePath = '../pages/contact.html';
-            break;
+            break; 
     }
     console.log(filePath);
 
