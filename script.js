@@ -1,10 +1,6 @@
 function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min) ) + min;
 }
-
-
-const btn = document.querySelector('.button-theme');
-
 const h1 = document.querySelector('h1');
 var delaytitle = getRndInteger(100, 2000);
 const interval = setInterval(function() {
@@ -41,6 +37,8 @@ delaytitle = getRndInteger(100, 2000);
 console.log(h1);
 
 
+
+const btn = document.querySelector('.button-theme');
 // Listen for a click on the button
 btn.addEventListener('click', function() {
     // Check if the body has the light-theme class

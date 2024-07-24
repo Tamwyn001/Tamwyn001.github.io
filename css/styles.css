@@ -115,7 +115,7 @@ header{
     align-items: center;
     height: auto;
     text-transform: uppercase;
-    margin-top: 1.3em;
+    margin-top: 0.7em;
     margin-bottom: 0.1em;
 
     /* border-bottom: 2px solid #ff7477; */
@@ -134,6 +134,7 @@ h1{
     justify-content: center;
     vertical-align: middle;
     margin-right: 2em;
+    margin-bottom: 0.5em;
     height: 40px; /* Height of the buttons, necessary for the separator in percent */
 }
 
