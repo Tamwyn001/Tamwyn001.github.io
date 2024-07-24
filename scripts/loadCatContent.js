@@ -28,3 +28,6 @@ function filterPage(page) {
             xhr.send();
 }
 
+// Load the Home page by default
+filterPage('Home'); 
+

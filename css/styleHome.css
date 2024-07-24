@@ -38,6 +38,11 @@
     height:auto;
     grid-area: stray;
 }
+#BeachStories{
+    width:100%;
+    height:auto;
+    grid-area: BeachStories;
+}
 #images-home-grid{
     display: grid;
     grid-template-areas:
@@ -45,7 +50,8 @@
       'DriftAuResto DriftAuResto DriftAuResto Port Port'
       'BALCONEE BALCONEE bday ScreenShot00018 ScreenShot00018'
       'BALCONEE BALCONEE . ScreenShot00018 ScreenShot00018'
-      'noel noel stray stray stray';
+      'noel noel stray stray stray'
+      'BeachStories BeachStories BeachStories . .';
     gap: 1em;
     padding: 10px;
 }
