@@ -56,10 +56,40 @@
     padding: 10px;
 }
 .photo-holder{    
+    position: relative;
     background-color: #f8f9fa;
     flex-grow: 0;
     padding: 10px;
     margin-top: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);;
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.178);
+    transform: translateY(0px) scaleX(1) scaleY(1);
+    transition: transform 0.15s ease-in-out; /* Animate the button */
+    display: inline-block;
 }
+
+.photo-holder:hover {
+    transform: translateY(-5px) scaleX(1.005) scaleY(1.005); /* Move the button 3px up on hover */
+}
+
+/*reflex effect with a pseudo element*/
+.photo-holder::after{
+    content: '';
+    position: absolute;
+    top: -50%; /* Start above the element */
+    left: -50%; /* Start to the left of the element */
+    width: 200%; /* Make it wide enough to cover the element */
+    height: 200%; /* Make it tall enough to cover the element */
+    transform: rotate(45deg); /* Rotate to create the reflex effect */
+    background: rgba(255, 255, 255, 0.874); /* White with some transparency */
+    /* transform: rotate(45deg); Rotate to create the reflex effect */
+    opacity: 0; /* Start invisible */
+    transition: opacity 0.5s, top 0.5s; /* Animate the opacity and position */
+}
+
+.photo-holder:hover::after{
+    top: 0%; /* Move to cover the element */
+    left: 0%; /* Center on the element */
+    opacity: 1; /* Make it visible */
+}
+
