@@ -55,6 +55,25 @@
     gap: 1em;
     padding: 10px;
 }
+@media screen and (max-width: 600px) {
+    #images-home-grid{
+        display: table;
+        width: 30em;
+        gap: 0.5em;
+        padding: 3px;
+    }
+}
+    /* Media query for smaller screens */
+    @media screen and (max-width: 600px) {
+    h2{
+        color: #ff7477;
+        font-size: 1em;
+        text-align: justify;
+        text-justify: left;
+        display: inline
+    }
+    }
+    
 .photo-holder {
     display: inline-block;
     position: relative;

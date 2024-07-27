@@ -52,8 +52,6 @@ body.dark-theme {
     display: inline-block; /* Ensure it behaves like an inline element */
     overflow: hidden; /* Ensure the line is visible only within the button */
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
     cursor: pointer;
     background-color: transparent;
     color: #ff7477;
@@ -62,6 +60,38 @@ body.dark-theme {
     transform: translateY(0px) scaleX(1) scaleY(1);
     transition: transform 0.1s linear, color 0.1s linear;
 }
+    /* Media query for smaller screens */
+    @media screen and (max-width: 1024px) {
+        .banner-button {
+            position: relative;
+            display: inline-block; /* Ensure it behaves like an inline element */
+            overflow: hidden; /* Ensure the line is visible only within the button */
+            border: none;
+            cursor: pointer;
+            background-color: transparent;
+            color: #ff7477;
+            font-size: 0.9em;
+            padding: 0.3rem 0.35rem;
+            transform: translateY(0px) scaleX(1) scaleY(1);
+            transition: transform 0.1s linear, color 0.1s linear;
+        }
+    }
+    /* Media query for smaller screens */
+    @media screen and (max-width: 600px) {
+        .banner-button {
+            position: relative;
+            display: inline-block; /* Ensure it behaves like an inline element */
+            overflow: hidden; /* Ensure the line is visible only within the button */
+            border: none;
+            cursor: pointer;
+            background-color: transparent;
+            color: #ff7477;
+            font-size: 0.7em;
+            padding: 0.2rem 0.35rem;
+            transform: translateY(0px) scaleX(1) scaleY(1);
+            transition: transform 0.1s linear, color 0.1s linear;
+        }
+    }
 
 .banner-button:hover {
     transform: translateY(-2px) scaleX(1.05) scaleY(1.05); /* Move the button 3px up on hover */
@@ -81,6 +111,36 @@ body.dark-theme {
     background-color:#ff7477; /* Line color */
     border-radius: 10px;
     transition: transform 0.3s ease; /* Transition effect for line width */
+}
+@media screen and (max-width: 1024px){
+    .banner-button::after {
+        content: '';
+        position: absolute;
+        transform: translateX(0%) scaleX(.3); /* Start with scaleX(0) to make it invisible */
+        transform-origin: center; /* Ensure the scaling is centered */
+        left: 0;
+        bottom: 0;
+        width:100%;
+        height: 3px; /* Line height */
+        background-color:#ff7477; /* Line color */
+        border-radius: 6px;
+        transition: transform 0.3s ease; /* Transition effect for line width */
+    }
+}
+@media screen and (max-width: 600px){
+    .banner-button::after {
+        content: '';
+        position: absolute;
+        transform: translateX(0%) scaleX(.3); /* Start with scaleX(0) to make it invisible */
+        transform-origin: center; /* Ensure the scaling is centered */
+        left: 0;
+        bottom: 0;
+        width:100%;
+        height: 2px; /* Line height */
+        background-color:#ff7477; /* Line color */
+        border-radius: 4px;
+        transition: transform 0.3s ease; /* Transition effect for line width */
+    }
 }
 
 
@@ -112,25 +172,85 @@ header{
     /* border-bottom: 2px solid #ff7477; */
 }
 
-/* Media query for smaller screens */
-@media screen and (min-width: 600px) {
+
+/* Media query for computer/landsdcape mode screens | The max indicates that the rules statrs with the bigger one*/
+h1{
+        color: #ff7477;
+        font-size: 2.5em;
+        text-align: left;
+        display: inline
+    }
+
+    /* Media query for smaller screens */
+@media screen and (max-width: 1024px) {
     h1{
-        color: #74a5ff;
-        font-size: 0.5em;
-        text-align: justify;
-        text-justify: distribute;
+        color:#ff7477;
+        font-size: 1.7em;
+        text-align: left;
         display: inline
     }
 }
-/* Media query for computer/landsdcape mode screens */
 
-h1{
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    h1{
+        color: #ff7477;
+        font-size: 1em;
+        text-align: justify;
+        text-justify: left;
+        display: inline
+    }
+}
+h2{
     color: #ff7477;
-    font-size: 2.5em;
-    text-align: justify;
-    text-justify: distribute;
+    font-size: 1.6em;
+    text-align: left;
     display: inline
 }
+
+/* Media query for smaller screens */
+@media screen and (max-width: 1024px) {
+h2{
+    color:#ff7477;
+    font-size: 1.3em;
+    text-align: left;
+    display: inline
+}
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+h2{
+    color: #ff7477;
+    font-size: 1em;
+    text-align: justify;
+    text-justify: left;
+    display: inline
+}
+}
+
+ul, li{
+    color: #2b2b2b;
+    font-size: 1.2em;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 1024px) {
+    ul, li{
+        color: #2b2b2b;
+        font-size: 0.9em;
+    }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    ul, li{
+        color: #2b2b2b;
+        font-size: 0.8em;
+    }
+}
+
+
 
 #banner-buttons-container{
     display: flex;
@@ -141,11 +261,42 @@ h1{
     margin-bottom: 0.5em;
     height: 40px; /* Height of the buttons, necessary for the separator in percent */
 }
+@media screen and (max-width: 1024px) {
+    #banner-buttons-container{
+        display: flex;
+        gap: 0.3rem;
+        justify-content: center;
+        vertical-align: middle;
+        margin-right: 1.5em;
+        margin-bottom: 0.5em;
+        height: 30px; /* Height of the buttons, necessary for the separator in percent */
+    }
+}
+@media screen and (max-width: 600px) {
+    #banner-buttons-container{
+        display: flex;
+        gap: 0.25rem;
+        justify-content: center;
+        vertical-align: middle;
+        margin-right: 1em;
+        margin-bottom: 0.5em;
+        height: 20px; /* Height of the buttons, necessary for the separator in percent */
+    }
+}
 
 .button-theme{
     width: 5em ;
 }
-
+@media screen and (max-width: 1024px){
+    .button-theme{
+        width: 4.5em ;
+    }
+}
+@media screen and (max-width: 600px){
+    .button-theme{
+        width: 4em ;
+    }
+}
 .separator-banner-buttons{
     width: 5px;
     height: 80%;
@@ -153,7 +304,24 @@ h1{
     background-color:#ff7477;
     border-radius: 7px;
 }
-
+@media screen and (max-width: 1024px){
+    .separator-banner-buttons{
+        width: 4px;
+        height: 80%;
+        align-self: center;
+        background-color:#ff7477;
+        border-radius: 6px;
+    }
+}
+@media screen and (max-width: 600px){
+    .separator-banner-buttons{
+        width: 3px;
+        height: 80%;
+        align-self: center;
+        background-color:#ff7477;
+        border-radius: 5px;
+    }
+}
 #content-wrapper {
     display: flex;
     flex-flow: row;
@@ -162,6 +330,28 @@ h1{
     margin-left:1em;
     padding: 1rem;
     height: 100%;
+}
+@media screen and (max-width: 1024px){
+    #content-wrapper {
+        display: flex;
+        flex-flow: row;
+        justify-content: left;
+        margin-top: 3.5em; /* Distance from the banner */
+        margin-left:0.7em;
+        padding: 0.7rem;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 600px){
+    #content-wrapper {
+        display: flex;
+        flex-flow: row;
+        justify-content: left;
+        margin-top: 1.5em; /* Distance from the banner */
+        margin-left:0.1em;
+        padding: 0.1rem;
+        height: 100%;
+    }
 }
 
 #center{
@@ -177,19 +367,75 @@ h1{
     padding: 1em;
 
 }   
-
+@media screen and (max-width: 1024px){
+    #center{
+        margin-top: 0.6em;
+        margin-left: 1em;
+        margin-bottom: 2.5em;
+        display: flex;
+        flex-direction: column;
+        flex-grow:  1;
+        /* Make the section fill the vertical remaining space :*/
+        
+        background-color: transparent;
+        padding: 0.7em;
+    
+    }  
+}
+@media screen and (max-width: 600px){
+    #center{
+        margin-top: 0.3em;
+        margin-left: 0.5em;
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+        flex-grow:  1;
+        /* Make the section fill the vertical remaining space :*/
+        
+        background-color: transparent;
+        padding: 1em;
+    
+    }  
+}
 
 p{
     color: #86bbd8;
     font-size: 1.2em;
 }
-
+    /* Media query for smaller screens */
+@media screen and (max-width: 1024px) {
+    p{
+        color: #86bbd8;
+        font-size: 0.75em;
+    }
+}
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    p{
+        color: #86bbd8;
+        font-size: 0.6em;
+    }
+}
 a{
     color: #8986d8;
     font-size: 1.2em;
     text-decoration: none;
 }
-
+@media screen and (max-width: 1024px) {
+    a{
+        color: #8986d8;
+        font-size: 0.75em;
+        text-decoration: none;
+    }
+}
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    a{
+        color: #8986d8;
+        font-size: 0.6em;
+        text-decoration: none;
+    }
+}
 #main{
     display: flex;
     gap: 1rem;
@@ -252,11 +498,29 @@ a{
     margin-top: 1rem;
     padding: 2em 5em;
 }
+
 #footer-container{
     display: flex;
     flex-direction: row;
     gap: 5rem;
     margin-top: 2em;
+}
+@media screen and (max-width: 1024px) {
+    #footer-container{
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        margin-top: 1.5em;
+    }
+}
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    #footer-container{
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        margin-top: 1em;
+    }
 }
 .footer-section{
     display: flex;
