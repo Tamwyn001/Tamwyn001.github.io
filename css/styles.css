@@ -115,7 +115,7 @@ header{
 /* Media query for smaller screens */
 @media screen and (min-width: 600px) {
     h1{
-        color: #ff7477;
+        color: #74a5ff;
         font-size: 0.5em;
         text-align: justify;
         text-justify: distribute;
