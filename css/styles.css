@@ -113,10 +113,10 @@ header{
 }
 
 /* Media query for smaller screens */
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
     h1{
         color: #ff7477;
-        font-size: 1.5em;
+        font-size: 0.5em;
         text-align: justify;
         text-justify: distribute;
         display: inline
