@@ -385,7 +385,7 @@ ul, li{
 @media screen and (max-width: 600px){
     #center{
         margin-top: 0.3em;
-        margin-left: 0.5em;
+        margin-left: 0.3em;
         margin-bottom: 1em;
         display: flex;
         flex-direction: column;
@@ -393,7 +393,7 @@ ul, li{
         /* Make the section fill the vertical remaining space :*/
         
         background-color: transparent;
-        padding: 1em;
+        padding: 0.4em;
     
     }  
 }

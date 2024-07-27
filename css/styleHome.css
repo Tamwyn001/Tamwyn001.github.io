@@ -55,10 +55,23 @@
     gap: 1em;
     padding: 10px;
 }
+@media screen and (max-width: 1024px) {
+    #images-home-grid{
+        display: grid;
+        grid-template-areas:
+          'DriftAuResto DriftAuResto'
+          'Port bday '
+          'Port bday '
+          'BALCONEE ScreenShot00018'
+          'noel stray'
+          'BeachStories BeachStories';
+        gap: 1em;
+        padding: 10px;
+    }
+}
 @media screen and (max-width: 600px) {
     #images-home-grid{
         display: table;
-        width: 30em;
         gap: 0.5em;
         padding: 3px;
     }
