@@ -112,6 +112,18 @@ header{
     /* border-bottom: 2px solid #ff7477; */
 }
 
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    h1{
+        color: #ff7477;
+        font-size: 1.5em;
+        text-align: justify;
+        text-justify: distribute;
+        display: inline
+    }
+}
+/* Media query for computer/landsdcape mode screens */
+
 h1{
     color: #ff7477;
     font-size: 2.5em;
@@ -119,6 +131,7 @@ h1{
     text-justify: distribute;
     display: inline
 }
+
 #banner-buttons-container{
     display: flex;
     gap: 0.5rem;
