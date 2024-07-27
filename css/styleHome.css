@@ -56,9 +56,10 @@
     padding: 10px;
 }
 .photo-holder {
-    display: flex;
+    display: inline-block;
     position: relative;
     overflow: hidden;
+    height: fit-content;
     padding: 10px;
     margin-top: 20px;
     border-radius: 5px;
