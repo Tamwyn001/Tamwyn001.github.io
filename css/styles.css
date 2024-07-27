@@ -49,22 +49,23 @@ body.dark-theme {
 
 .banner-button {
     position: relative;
-    color: #ff7477;
+    display: inline-block; /* Ensure it behaves like an inline element */
+    overflow: hidden; /* Ensure the line is visible only within the button */
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     background-color: transparent;
-    overflow: hidden; /* Ensure the line is visible only within the button */
-    transition: color 0.3s ease; /* Transition effect for button text color */;
+    color: #ff7477;
     font-size: 1.1em;
     padding: 0.5rem 0.4rem;
-    display: inline-block; /* Ensure it behaves like an inline element */
-    transform: translateY(opx) scaleX(1) scaleY(1);
-    transition: transform 0.1s linear;
+    transform: translateY(0px) scaleX(1) scaleY(1);
+    transition: transform 0.1s linear, color 0.1s linear;
 }
+
 .banner-button:hover {
     transform: translateY(-2px) scaleX(1.05) scaleY(1.05); /* Move the button 3px up on hover */
+    color: #ff898b;
 }
 
 /* Line under the button using pseudo-element */
