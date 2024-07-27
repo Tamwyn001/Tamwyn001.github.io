@@ -267,7 +267,7 @@ ul, li{
         gap: 0.3rem;
         justify-content: center;
         vertical-align: middle;
-        margin-right: 1.5em;
+        margin-right: 1.2em;
         margin-bottom: 0.5em;
         height: 30px; /* Height of the buttons, necessary for the separator in percent */
     }
@@ -278,7 +278,7 @@ ul, li{
         gap: 0.25rem;
         justify-content: center;
         vertical-align: middle;
-        margin-right: 1em;
+        margin-right: .5em;
         margin-bottom: 0.5em;
         height: 20px; /* Height of the buttons, necessary for the separator in percent */
     }
