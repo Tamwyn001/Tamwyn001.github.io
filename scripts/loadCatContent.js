@@ -10,6 +10,9 @@ function filterPage(page) {
         case 'Contact':
             filePath = '../pages/contact.html';
             break; 
+        case 'Music':
+            filePath = '../pages/music.html';
+            break;
     }
     console.log(filePath);
 
