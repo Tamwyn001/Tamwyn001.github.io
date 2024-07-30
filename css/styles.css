@@ -17,7 +17,14 @@
     font-weight: 400;
     font-style: normal;
   }
-
+  .josefin-sans-paragraph {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 1em;
+    font-style: normal;
+    color: rgb(113, 113, 113);
+  }
   
   .josefin-sans-light {
     font-family: "Josefin Sans", sans-serif;
@@ -230,14 +237,14 @@ h2{
 }
 
 ul, li{
-    color: #2b2b2b;
+    color: #a3a3a3;
     font-size: 1.2em;
 }
 
 /* Media query for smaller screens */
 @media screen and (max-width: 1024px) {
     ul, li{
-        color: #2b2b2b;
+        color: #a3a3a3;
         font-size: 0.9em;
     }
 }
@@ -245,7 +252,7 @@ ul, li{
 /* Media query for smaller screens */
 @media screen and (max-width: 600px) {
     ul, li{
-        color: #2b2b2b;
+        color: #a3a3a3;
         font-size: 0.8em;
     }
 }
@@ -326,7 +333,7 @@ ul, li{
     display: flex;
     flex-flow: row;
     justify-content: left;
-    margin-top: 7em; /* Distance from the banner */
+    margin-top: 5em; /* Distance from the banner */
     margin-left:1em;
     padding: 1rem;
     height: 100%;

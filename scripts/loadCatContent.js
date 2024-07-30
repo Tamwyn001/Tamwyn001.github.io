@@ -13,6 +13,12 @@ function filterPage(page) {
         case 'Music':
             filePath = '../pages/music.html';
             break;
+        case 'Art.Stray':
+            filePath = '../pages/art-stray.html';
+            break;
+        case 'Art.22Beach':
+            filePath = '../pages/art-22beach.html';
+            break;
     }
     console.log(filePath);
 

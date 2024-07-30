@@ -40,9 +40,9 @@ async function nextTitleEffectOccurence() {
     while (true) {
         let delaytitle = getRndInteger(4000, 10000);
         await sleepNow(delaytitle);
-        console.log('delay:', delaytitle);
+        //console.log('delay:', delaytitle);
         random = getRndInteger(0, 2);
-        console.log('random:', random);
+        //console.log('random:', random);
         switch(random) {
             case 0:
                 displayAnimation(spinner);
@@ -55,5 +55,3 @@ async function nextTitleEffectOccurence() {
         }
     }
 }
-
-nextTitleEffectOccurence();

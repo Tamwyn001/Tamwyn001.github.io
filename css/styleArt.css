@@ -1,0 +1,94 @@
+.project-container{
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+#ArtCollection{
+    display: table;
+}
+.project-holder {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    padding: 0.3em; 
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 130px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.178);
+    transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Animate the button */
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    object-position: 0 -20px;
+    border-radius: 5px 5px 0px 0px;
+    transition: transform 0.15s ease-in-out, object-position 0.15 ease; /* Animate the button */
+}
+img:hover {
+    width: 100%;
+    height: 45%;
+    object-fit: cover;
+    object-position: 0 -40px;
+    transform: translateY(-100px);
+    border-radius: 5px 5px 0px 0px;
+}
+
+.project-holder::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Set to 200% width to allow full movement */
+    height: 100%;
+    opacity: 0.1;
+    transform-origin: left;
+    z-index: 2; /* Place the pseudo-element above the image */
+    transform: translateX(-40px);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out; /* Animate the transform property */
+}
+
+.project-holder:hover::after {
+    transform: translateX(0px) ; /* Move the gradient across the element */
+    opacity: 0.3;
+    
+}
+
+.project-holder:hover {
+    transform: translateY(-3px) scaleX(1.005) scaleY(1.005) rotate(0.3deg); /* Move the button up and slightly scale */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.178);
+
+}
+.project-title{
+    position: absolute;
+    bottom: 5%;
+    height: 1.5em;
+    width: 100%;
+    font-size: 1.2em;
+    justify-content: center;
+}
+
+.drawings{
+    background: white;
+}
+.drawings:hover{
+    background: aliceblue;
+}
+.threeD{
+    background: white;
+}
+.threeD:hover{
+    background: rgb(245, 240, 255);
+}
+.travel-book{
+    background: white;
+}
+.travel-book:hover{
+    background: rgb(240, 255, 244);
+}
