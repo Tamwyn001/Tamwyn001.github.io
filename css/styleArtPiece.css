@@ -7,6 +7,52 @@
     width: 100%;
 }
 
+.button-back{
+    background: transparent;
+    border: none;
+    display: inline-flex;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.button-back:hover{
+    background: transparent;
+    border: none;
+    background-color: rgb(235, 235, 235);
+}
+.project-description{
+    font-size: 1.25em;
+}
+@media screen and (max-width: 1024px){
+    .project-description{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 600px) {
+    .project-description{
+        font-size: 0.8em;
+    }
+}
+
+.button-back svg{
+    width: 5em;
+    height: 5em;
+}
+@media screen and (max-width: 1024px){
+    .button-back svg{
+        width: 4em;
+        height: 4em;
+    }
+}
+@media screen and (max-width: 600px) {
+    .button-back svg{
+        width: 3em;
+        height: 3em;
+    }
+}
+
+
 .art-piece-thumbnail-top{
     object-fit: cover;
     width: 100%;
@@ -14,16 +60,40 @@
     margin-bottom: 1em;
     border-radius: 20px 20px 0px 0px;
 }
+@media screen and (max-width: 1024px){
+    .art-piece-thumbnail-top{
+        object-fit: cover;
+        width: 100%;
+        height: 100px;
+        margin-bottom: .5em;
+        border-radius: 20px 20px 0px 0px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .art-piece-thumbnail-top{
+        object-fit: cover;
+        width: 100%;
+        height: 50px;
+        margin-bottom: 1em;
+        border-radius: 15px 15px 0px 0px;
+    }   
+}
 .art-piece-wide{
     margin-top: 1em;
     width: 100%;
     height: auto;
 }
-
+/* 
 #BeachStories{
     object-position: 0 -270px;
 }
-.mask-thumbnail{
-    /* mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 10%); */
-    mask-repeat: no-repeat;
+@media screen and (max-width: 1024px){
+    #BeachStories{
+        object-position: 0 -180px;
+    }
 }
+@media screen and (max-width: 600px) {
+    #BeachStories{
+        object-position: 0 -100px;
+    }  
+} */

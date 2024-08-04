@@ -38,5 +38,5 @@ function filterPage(page) {
 }
 
 // Load the Home page by default
-filterPage('Home'); 
+filterPage('Art.22Beach'); 
 
