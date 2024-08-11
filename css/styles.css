@@ -34,8 +34,7 @@
 
 body{
     /* background-image: url('../graphics/IndexBackground.png'); */
-    background-color: #ff7477;;
-    background-repeat: repeat;
+    background-color:#f7e8a4;
     background-size: 60%;
     /*body takes the full height of the viewport */
     height: 80vh;
