@@ -1,0 +1,18 @@
+#Background{
+    background-color: grey;
+    opacity: 0.4;
+}
+
+.button-close-fullview{ 
+    background: transparent;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.button-close-fullview::hover{
+    background: transparent;
+    border: none;
+    background-color: rgb(235, 235, 235);
+}

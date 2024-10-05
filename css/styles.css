@@ -163,6 +163,7 @@ body.dark-theme {
     padding-top: 2px;
     padding-bottom: 1px;
     border-radius: 0px 0px 20px 20px;
+    box-shadow: #8c89989a 0px 0px 3px 3px;
     
 }
 header{
@@ -498,10 +499,10 @@ a{
     justify-content: center;
     align-items: center;
     background-color: #f2f3ae;
-    color: #ff7477;
     padding: 1rem;
     margin-top: 1rem;
     padding: 2em 5em;
+    box-shadow: #35304d 10px 10px 10px 10px;
 }
 
 #footer-container{

@@ -29,6 +29,7 @@ function filterPage(page) {
                 if (xhr.readyState === XMLHttpRequest.DONE) {
                     if (xhr.status === 200) {
                         document.getElementById('contentDiv').innerHTML = xhr.responseText;
+                        window.scrollTo(0, 0);
                     } else {
                         console.error('Error loading file:', xhr.statusText);
                     }

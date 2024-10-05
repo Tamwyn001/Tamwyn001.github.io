@@ -1,9 +1,11 @@
 <!-- this is just some input code for another file, not a proper page-->
 <link rel="stylesheet" href="../css/styleHome.css">
-
+<div id="imageContent"></div>
 <div id="images-home-grid">   
     <div class="photo-holder" id="DriftAuResto">
+        <button onclick="ToggleDisplayImage('Drift')" class ="invisible"> 
         <img src="../graphics/Drift au resto.png" alt="DriftAuResto" >
+        </button>
     </div>
     <div class="photo-holder" id="Port">
         <img src="../graphics/Port.png" alt="Port" >
@@ -21,10 +23,14 @@
         <img src="../graphics/2120.png" alt="2120">
     </div>
     <div class="photo-holder" id="stray">
+        <button onclick="filterPage('Art.Stray')" class ="invisible"> 
         <img src="../graphics/stray.png" alt="stray">
+        </button>
     </div>
     <div class="photo-holder" id="BeachStories">
+        <button onclick="filterPage('Art.22Beach')" class ="invisible"> 
         <img src="../graphics/BeachStories.png" alt="BeachStories">
+        </button>
     </div>
     
 </div>

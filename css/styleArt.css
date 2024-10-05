@@ -3,7 +3,8 @@
     flex-wrap: wrap;
     width: 100vw;
     gap: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 1.25em;
+    margin-top: 0.75em;
 }
 .in-progress{
     border-radius: 2px;
@@ -17,7 +18,7 @@
 .disclamer{
     display: relative;
     width: 300px;
-    margin-left: 1em;
+    margin-left: 0em;
     padding: 10px;
     margin-right: 10em;
     border-radius: 10px;
@@ -31,6 +32,12 @@
 #ArtCollection{
     display: table;
 }
+@media screen and (max-width: 616px) {
+    #ArtCollection{
+        margin: 0 auto;
+    }
+}
+
 .project-holder {
     display: flex;
     position: relative;
